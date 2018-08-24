@@ -9,6 +9,14 @@
     "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
+  "editorconfig-cli": [
+    "*.json",
+    "source/*.html",
+    "source/**/*.scss"
+  ],
+  "engines": {
+    "node": "10.8.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/uanoob/pink.git"

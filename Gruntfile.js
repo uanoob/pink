@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: "source",
-            src: ["fonts/**/*.{woff,woff2}", "js/**", "css/**"],
+            src: ["fonts/**/*.{woff,woff2}", "js/**", "css/**", "img/*.svg"],
             dest: "build/",
           },
         ],
