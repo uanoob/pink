@@ -9,7 +9,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: "source",
-            src: ["fonts/**/*.{woff,woff2}", "js/**", "css/**", "img/*.svg"],
+            src: ["fonts/**/*.{woff,woff2}", "css/**", "img/*.svg"],
             dest: "build/",
           },
         ],
@@ -47,6 +47,27 @@ module.exports = function(grunt) {
         },
         files: {
           "build/css/style.min.css": ["build/css/style.css"],
+        },
+      },
+    },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ["env"],
+      },
+      dist: {
+        files: {
+          "build/js/app.js": "source/js/app.js",
+        },
+      },
+    },
+    uglify: {
+      js: {
+        options: {
+          beautify: true,
+        },
+        files: {
+          "build/js/app.min.js": ["build/js/app.js"],
         },
       },
     },
@@ -104,11 +125,18 @@ module.exports = function(grunt) {
           livereload: true,
         },
       },
+      js: {
+        files: ["source/js/*.js"],
+        tasks: ["babel", "uglify"],
+        options: {
+          reload: true,
+        },
+      },
     },
     browserSync: {
       server: {
         bsFiles: {
-          src: ["build/*.html", "build/css/*.css"],
+          src: ["build/*.html", "build/css/*.css", "build/js/*.js"],
         },
         options: {
           server: "build/",
@@ -139,6 +167,8 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
+    "babel",
+    "uglify",
     "imagemin",
     "svgstore",
     "posthtml",
