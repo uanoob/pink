@@ -1,0 +1,55 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 100px;
+    padding: 0 20px;
+  }
+
+  .effect-wrap {
+    width: 310px;
+  }
+
+  .effect__title {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 30px;
+    line-height: 36px;
+    color: $bg-black;
+  }
+
+  .effect__description {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    color: $bg-darkblue;
+  }
+
+  .effect__link {
+    color: $bg-darkred;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    margin-bottom: 190px;
+    padding: 0 130px;
+  }
+
+  .effect-wrap {
+    width: 570px;
+  }
+
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,153 @@
+.info {
+  text-align: center;
+  margin: 0;
+  padding: 0 30px;
+  background-color: #f2f2f2;
+}
+
+.info__promo-wrap {
+  padding-top: 42px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $bg-darkblue;
+}
+
+.info__promo {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.info__list {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 40px;
+}
+
+.info__item:last-child {
+  margin-bottom: 0;
+}
+
+.info__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.info__image {
+  align-self: center;
+  order: 1;
+
+  margin-top: 40px;
+}
+
+.info__image--grey,
+.info__image--pink,
+.info__image--tablet {
+  display: none;
+}
+
+.info__description {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .info {
+    margin-bottom: 60px;
+    padding-top: 55px;
+  }
+
+  .info__promo-wrap {
+    font-size: 40px;
+    line-height: 40px;
+
+    margin-bottom: 120px;
+  }
+
+  .info__promo {
+    margin: 0;
+  }
+
+  .info__promo--second {
+    padding: 0 140px;
+  }
+
+  .info__image--tablet {
+    display: block;
+  }
+
+  .info__image--smile {
+    display: none;
+  }
+
+  .info__list-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .info__list {
+    width: 310px;
+    margin: 0;
+  }
+
+  .info__title {
+    margin-bottom: 20px;
+    line-height: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info {
+    padding: 0 120px;
+  }
+
+  .info__promo-wrap {
+    margin: 0 130px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .info__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info__item {
+    width: 250px;
+  }
+
+  .info__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .info__image--tablet {
+    display: none;
+  }
+
+  .info__image {
+    display: inline-block;
+    order: -1;
+    margin-bottom: 50px;
+  }
+
+  .info__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: $bg-darkblue;
+  }
+}

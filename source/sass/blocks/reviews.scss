@@ -1,0 +1,127 @@
+.reviews {
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.reviews__author-name {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__author-description {
+  display: none;
+}
+
+.reviews__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 30px;
+  color: $bg-darkblue;
+  font-weight: 400;
+}
+
+.reviews__prev,
+.reviews__next {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-name {
+    padding: 0;
+  }
+
+  .reviews__author-description {
+    display: block;
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .reviews__text {
+    margin: 0;
+    margin-bottom: 40px;
+    order: -1;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    padding: 0 130px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__author-description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__text {
+    position: relative;
+    margin: 0 120px;
+    margin-bottom: 40px;
+  }
+
+  .reviews__text::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 46%;
+    width: 79px;
+    height: 64px;
+    background-image: url("/img/quotes.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .reviews__prev,
+  .reviews__next {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+
+  .reviews__prev::before,
+  .reviews__next::before {
+    content: "";
+    position: absolute;
+    top: -210px;
+    width: 22px;
+    height: 42px;
+    // background-color: orangered;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .reviews__prev::before {
+    left: 50px;
+    background-image: url("/img/left-arrow.svg");
+  }
+
+  .reviews__next::before {
+    right: 28px;
+    background-image: url("/img/right-arrow.svg");
+  }
+
+  .reviews__toggles {
+    display: none;
+  }
+}
