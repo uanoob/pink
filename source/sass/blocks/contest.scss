@@ -77,11 +77,20 @@
   padding-left: 20px;
   width: 100%;
   height: 60px;
+  outline: none;
   box-sizing: border-box;
   font: inherit;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $bg-lightgrey;
+}
+
+.contest__input:hover {
+  border: 2px solid $bg-darkblue;
+}
+
+.contest__input:focus {
+  border: 2px solid $bg-darkred;
 }
 
 .contest__user-wrap {
@@ -168,6 +177,14 @@
   border: 2px solid $lightgrey;
 }
 
+.contest__checkbox-label:hover::before {
+  border: 2px solid $bg-darkblue;
+}
+
+.contest__checkbox-label:active::before {
+  border: 2px solid $bg-darkred;
+}
+
 .contest__item--checkbox input[type="checkbox"]:checked + .contest__checkbox-label::before {
   background-image: url("/img/tick.svg");
   background-size: 22px 16px;
@@ -185,6 +202,14 @@
   background-repeat: no-repeat;
   border: 2px solid $lightgrey;
   border-radius: 50%;
+}
+
+.contest__radio-label:hover::before {
+  border: 2px solid $bg-darkblue;
+}
+
+.contest__radio-label:active::before {
+  border: 2px solid $bg-darkred;
 }
 
 .contest__item--radio input[type="radio"]:checked + .contest__radio-label::after {
@@ -533,5 +558,4 @@
   .contest__legend-span {
     display: inline;
   }
-
 }

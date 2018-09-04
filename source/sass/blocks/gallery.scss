@@ -1,0 +1,162 @@
+.gallery__title {
+  margin: 0;
+  padding: 55px 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__description {
+  margin: 0;
+}
+
+.gallery__item {
+  border: 1px solid orangered;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: $bg-lightgrey;
+}
+
+.gallery__image--day {
+  position: relative;
+  margin: 0 -20px;
+  background-color: $bg-lightgrey;
+}
+
+.gallery__image--day::before {
+  content: "Панорама дня";
+  position: absolute;
+  right: 20px;
+  top: 0;
+  padding-top: 10px;
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  align-content: center;
+  color: $bg-white;
+  background-color: $bg-darkred;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.gallery__item-wrap {
+  padding: 20px 18px 25px 18px;
+}
+
+.gallery__author {
+  font-weight: 700;
+}
+
+.gallery__span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gallery__likes {
+  position: relative;
+  margin-left: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $bg-darkred;
+}
+
+.gallery__likes::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 13px;
+  height: 12px;
+  // background-color: red;
+  background-image: url("/img/icon-heart.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__title {
+    padding: 90px 90px 80px 90px;
+    font-size: 18px;
+  }
+
+  .gallery__list {
+    border: 1px solid orangered;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item {
+    border: 1px solid orangered;
+    margin: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .gallery__item--day {
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .gallery__image--day {
+    margin: 0;
+  }
+
+  .gallery__wrap--day::before {
+    top: 55px;
+  }
+
+  .gallery__item-wrap {
+    border: 1px solid orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 30px 30px 27px;
+  }
+
+  .gallery__author-wrap {
+    margin-bottom: 20px;
+  }
+
+  .gallery__description--day {
+    order: 1;
+  }
+
+  .gallery__likes {
+    margin: 0;
+  }
+
+  .gallery__likes::before {
+    top: 5px;
+    left: 225px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__title {
+    padding: 90px 300px;
+  }
+
+  .gallery__list {
+    margin: 0 130px;
+  }
+
+  .gallery__item {
+    margin-bottom: 55px;
+  }
+}
