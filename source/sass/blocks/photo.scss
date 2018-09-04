@@ -1,0 +1,38 @@
+.photo__main {
+  margin-top: -66px;
+  background-image: url("/img/back-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.photo__title {
+  margin: 0;
+  padding: 100px 50px 88px 50px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: $bg-white;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__main {
+    background-image: url("/img/back-tablet.jpg");
+  }
+
+  .photo__title {
+    padding: 185px 50px 145px 50px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__main {
+    background-image: url("/img/back-desktop.jpg");
+  }
+
+  .photo__title {
+    padding: 170px 400px 110px 400px;
+  }
+}

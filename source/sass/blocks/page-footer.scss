@@ -1,5 +1,6 @@
 .page-footer {
   display: none;
+  padding: 40px 20px;
 }
 
 .inner-page .page-footer {
@@ -73,7 +74,6 @@
 }
 
 .page-footer__copyright {
-  margin-bottom: 40px;
   width: 150px;
   padding: 12px 0;
   position: relative;
@@ -101,12 +101,18 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     display: block;
-    margin: 35px 20px;
+    // padding: 35px 20px;
   }
 
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .page-footer__logo,
+  .page-footer__social,
+  .page-footer__copyright {
+    margin-bottom: 0;
   }
 }
 
