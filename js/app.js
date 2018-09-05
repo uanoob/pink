@@ -1,6 +1,8 @@
-const mainMenu = document.querySelector(".main-nav__wrapper");
-const toggleBtn = document.querySelector(".main-nav__toggle");
-const closeBtn = document.querySelector(".main-nav__close");
+"use strict";
+
+var mainMenu = document.querySelector(".main-nav__wrapper");
+var toggleBtn = document.querySelector(".main-nav__toggle");
+var closeBtn = document.querySelector(".main-nav__close");
 
 closeBtn.addEventListener("click", toggleMenu);
 toggleBtn.addEventListener("click", toggleMenu);
@@ -14,3 +16,4 @@ function toggleMenu() {
   toggleBtn.classList.toggle("hide-menu");
   closeBtn.classList.toggle("hide-menu");
 }
+//# sourceMappingURL=app.js.map
