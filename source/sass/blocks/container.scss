@@ -1,18 +1,18 @@
 .container {
   border: 1px solid orangered;
 
-  width: $mobile-width;
+  max-width: $mobile-width;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: $tablet-width;
+    max-width: $tablet-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
-    width: $desktop-width;
+    max-width: $desktop-width;
   }
 }
