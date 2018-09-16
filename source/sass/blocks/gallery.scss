@@ -17,7 +17,7 @@
 }
 
 .gallery__item {
-  border: 1px solid orangered;
+  // border: 1px solid orangered;
   margin: 0 20px;
   margin-bottom: 20px;
   font-size: 14px;
@@ -33,7 +33,7 @@
 }
 
 .gallery__image--day::before {
-  content: "Панорама дня";
+  content: 'Панорама дня';
   position: absolute;
   right: 20px;
   top: 0;
@@ -72,14 +72,14 @@
 }
 
 .gallery__likes::before {
-  content: "";
+  content: '';
   position: absolute;
   left: -30px;
   top: 0;
   width: 13px;
   height: 12px;
   // background-color: red;
-  background-image: url("/img/icon-heart.svg");
+  background-image: url('../img/icon-heart.svg');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -91,7 +91,7 @@
   }
 
   .gallery__list {
-    border: 1px solid orangered;
+    // border: 1px solid orangered;
     margin: 0 20px;
     display: flex;
     justify-content: space-between;
@@ -99,7 +99,7 @@
   }
 
   .gallery__item {
-    border: 1px solid orangered;
+    // border: 1px solid orangered;
     margin: 0;
     width: 300px;
     display: flex;
@@ -121,7 +121,7 @@
   }
 
   .gallery__item-wrap {
-    border: 1px solid orangered;
+    // border: 1px solid orangered;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

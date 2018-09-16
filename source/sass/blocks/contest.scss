@@ -2,7 +2,7 @@
   margin-top: -66px;
   padding: 0 20px;
   padding-top: 66px;
-  background-image: url("/img/back-mobile.jpg");
+  background-image: url('../img/back-mobile.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -165,7 +165,7 @@
 }
 
 .contest__checkbox-label::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -5px;
   left: -70px;
@@ -185,13 +185,15 @@
   border: 2px solid $bg-darkred;
 }
 
-.contest__item--checkbox input[type="checkbox"]:checked + .contest__checkbox-label::before {
-  background-image: url("/img/tick.svg");
+.contest__item--checkbox
+  input[type='checkbox']:checked
+  + .contest__checkbox-label::before {
+  background-image: url('../img/tick.svg');
   background-size: 22px 16px;
 }
 
 .contest__radio-label::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -5px;
   left: -70px;
@@ -212,8 +214,10 @@
   border: 2px solid $bg-darkred;
 }
 
-.contest__item--radio input[type="radio"]:checked + .contest__radio-label::after {
-  content: "";
+.contest__item--radio
+  input[type='radio']:checked
+  + .contest__radio-label::after {
+  content: '';
   position: absolute;
   top: 7px;
   left: -58px;
@@ -298,7 +302,7 @@
 
 @media (min-width: $tablet-width) {
   .contest {
-    background-image: url("/img/back-tablet.jpg");
+    background-image: url('../img/back-tablet.jpg');
   }
 
   .contest__header {
@@ -397,7 +401,7 @@
   }
 
   .contest__contacts-item::after {
-    content: "";
+    content: '';
     position: absolute;
     right: 60px;
     width: 60px;
@@ -408,12 +412,12 @@
   }
 
   .contest__contacts-item--phone::after {
-    background-image: url("/img/phone.svg");
+    background-image: url('../img/phone.svg');
     background-size: 20px 20px;
   }
 
   .contest__contacts-item--mail::after {
-    background-image: url("/img/mail.svg");
+    background-image: url('../img/mail.svg');
     background-size: 18px 14px;
   }
 
@@ -492,7 +496,7 @@
   .contest {
     padding: 0 120px;
     padding-top: 66px;
-    background-image: url("/img/back-desktop.jpg");
+    background-image: url('../img/back-desktop.jpg');
   }
 
   .contest__header {
