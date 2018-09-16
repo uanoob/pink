@@ -1,6 +1,6 @@
 .photo__main {
   margin-top: -66px;
-  background-image: url("/img/back-mobile.jpg");
+  background-image: url('../img/back-mobile.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -17,7 +17,7 @@
 
 @media (min-width: $tablet-width) {
   .photo__main {
-    background-image: url("/img/back-tablet.jpg");
+    background-image: url('../img/back-tablet.jpg');
   }
 
   .photo__title {
@@ -29,7 +29,7 @@
 
 @media (min-width: $desktop-width) {
   .photo__main {
-    background-image: url("/img/back-desktop.jpg");
+    background-image: url('../img/back-desktop.jpg');
   }
 
   .photo__title {

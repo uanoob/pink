@@ -50,7 +50,7 @@
 }
 
 .price__checked::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 18px;
   left: 17px;
@@ -62,11 +62,11 @@
 }
 
 .price__checked-yes::before {
-  background-image: url("/img/yes.svg");
+  background-image: url('../img/yes.svg');
 }
 
 .price__checked-no::before {
-  background-image: url("/img/no.svg");
+  background-image: url('../img/no.svg');
 }
 
 .price__toggles {
